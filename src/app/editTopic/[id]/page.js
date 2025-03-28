@@ -1,5 +1,6 @@
-import EditTopicForm from '@/app/components/editTopicForm'
+import EditForm from '@/app/components/EditForm'
 import React from 'react'
+
 
 
 const topicById =async (id) => {
@@ -15,7 +16,7 @@ const topicById =async (id) => {
 }
 
 
-const page =async ({params}) => {
+const Page =async ({params}) => {
   const {id} =await params;
   console.log(id);
   
@@ -26,9 +27,9 @@ const page =async ({params}) => {
 
   return (
      <> 
-      <EditTopicForm id={id} title={title} description={description}/>
-     </>
+  <EditForm id={id} title={title} description={description}/>
+   </>
   )
 }
 
-export default page
+export default Page

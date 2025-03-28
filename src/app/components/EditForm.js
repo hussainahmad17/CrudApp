@@ -1,8 +1,8 @@
 "use client"
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
 
-const EditTopicForm = ({ id, title, description }) => {
+const EditForm = ({ id, title, description }) => {
   const [newTitle, setNewTitle] = useState(title)
   const [newDescription, setNewDescription] = useState(description)
   const router = useRouter()
@@ -65,4 +65,4 @@ const EditTopicForm = ({ id, title, description }) => {
   )
 }
 
-export default EditTopicForm
+export default EditForm
